@@ -2,7 +2,6 @@
 FROM tutum/lamp
 
 RUN apt-get update -q -y && \
-	apt-get upgrade -q -y && \
 	apt-get install -q -y curl php5-gd php5-ldap php5-imap sendmail php5-pgsql php5-curl && \
 	apt-get clean && \
 	php5enmod imap
