@@ -18,8 +18,8 @@ RUN chmod +x /start.sh && \
 
 ENV LIMESURVEY_VERSION="3.17.0+190402"
 
-RUN apt-get update -q -y && \
-	apt-get upgrade -q -y
+#RUN apt-get update -q -y && \
+#	apt-get upgrade -q -y
 	
 RUN rm -rf /app && \
     git clone https://github.com/LimeSurvey/LimeSurvey.git && \
